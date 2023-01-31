@@ -1,0 +1,138 @@
+/* My UX Skills section coded using CSS flex */
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+.flexChild {
+    width: 33%;
+    padding: 20px;
+    margin: 10px;
+    background-color: rgb(171, 214, 250);
+    border: solid;
+
+}
+
+.flexChild img {
+    max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+h1 {
+    text-align: center;
+    background-color: rgb(221, 193, 247);
+    height: 50px;
+    padding: 50px;
+    border: solid;
+}
+
+/* My UX Skills section coded using CSS grid */
+
+.workGrid {
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-areas: 'img1 work1 work1'
+    'img2 work2 work2'
+    'img3 work3 work3';
+    
+}
+
+.img1 {
+    grid-area: img1;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.img2 {
+    grid-area: img2;
+    width:400px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.img3 {
+    grid-area: img3;
+    width: 400px;
+    margin: 10px;
+    padding: 20px;
+}
+
+.work1 {
+    grid-area: work1;
+    padding: 10px;
+    border: solid;
+    position: relative;
+}
+
+.work2 {
+    grid-area: work2;
+    padding: 10px;
+    border: solid;
+    position: relative;
+}
+
+.work3 {
+    grid-area: work3;
+    padding: 10px;
+    border: solid;
+    position: relative;
+}
+
+.projectBlock {
+    border: solid;
+    background-color: white;
+}
+
+h3 {
+    text-align: center;
+}
+
+button {
+    background-color: black;
+    color: white;
+    width: 200px;
+    height: 50px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+@media only screen and (max-width: 600px){
+    .flexContainer {
+        display: flex;
+        flex-direction: column;
+    
+    } 
+    .flexChild {
+        width: 100%;
+        padding: 20px;
+        margin: 10px;
+        background-color: rgb(171, 214, 250);
+        border: solid;
+    
+    }
+    .workGrid {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        'img1' 
+        'work1' 
+        'work1'
+        'img2' 
+        'work2'
+        'work2'
+        'img3' 
+        'work3' 
+        'work3'
+        ; 
+    }
+}
